@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    text-decoration: none;
+
+}
+
+@font-face{
+    font-family: "AM";
+    src: url(../fontes/AM_TP001.TTF);
+    
+}
+
+body{
+    width: 100%;
+    text-align: center;
+    font-family: "AM";
+    background-color: rgba(255, 228, 196, 0.624);
+    overflow: hidden;
+    
+
+}
+button{
+    display: none;
+}
+.primeira-pg{
+    width: 100%;
+    height: 100vh;
+}
+
+img{
+    height: 100vh;
+    width: 40%;
+    float: right;
+}
+
+.primeira-pg__apresentacao{
+   padding-top: 15%;
+   
+
+}
+
+.apresentacao-titulo span{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 1em;
+}
+
+.code{
+    color: red;
+    text-indent: 20%;
+}
+
+.menu{
+    /* border: red solid 1px; */
+    padding: 1em  0;
+    position: relative;
+    top:10%; 
+    margin-top:3em;
+    text-align: center;
+    width: 60%;
+}
+
+.menu-lista{
+    /* border: solid red; */
+    text-align: center;
+    
+}
+
+.menu-lista__item{
+    width: 25%;
+    display: inline;
+    padding: 1em 2em;
+    border: rgb(255, 0, 43) solid 3px; 
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+.menu-lista__item:hover{
+    background-color: azure;
+}
+
+.menu-lista__item a{
+    text-decoration: none;
+    color:black;
+   
+}
+
+main{
+    height: 100vh;
+}
+section #contato{
+    width: 100%;
+    display: block;
+}
+.contato-titulo{
+    width: 30%;
+    height: 100vh;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    margin-top:7%;
+    padding-top: 20%;
+
+}
+
+.contato-titulo h1{
+    width: 100%;
+    transform:rotate(270deg);
+
+   
+}
+
+.contato-redes{
+    width: 50%;
+    margin: 0 39%;
+    /* border: red solid; */
+    height: 100%;
+    position: relative;
+    bottom:500px;
+    
+}
+
+.contato-redes__icone{
+    width: 128px;
+    height: 128px;
+    /* border: 1px red solid; */
+    padding-left: 3em;
+}
+
+.contato-redes .seta{
+    width: 88px;
+    height: 88px;
+    position: relative;
+    bottom: 25em;
+}
+

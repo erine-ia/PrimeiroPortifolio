@@ -1,0 +1,119 @@
+/* 
+    $breakpoint-sm: 576px;
+    $breakpoint-md: 768px;
+    $breakpoint-lg: 992px;
+    $breakpoint-xl: 1200px;
+    
+*/
+
+@media screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+    
+    
+    @font-face{
+        font-family: "AM";
+        src: url(fontes/AM_TP001.TTF);
+        
+    }
+    
+    body{
+        width: 100%;
+        font-family:"AM";
+        background-color: rgb(255, 228, 196);
+        
+    }
+    
+    header{
+        width: 100%;  
+    
+    }
+    
+    
+    h1{
+       font-size: 32px;
+       position: relative;
+       bottom: 5em;
+       margin: 0 auto;
+    }
+    
+    
+    header img{
+        width: 100%;
+        filter: grayscale(2);
+        opacity:0.5;
+    }
+    
+    .menu{
+        position: absolute;
+        background-color: rgb(255, 228, 196);
+        width: 100%;
+        position: fixed;
+        top: 1em;
+        text-align: left;
+        display:block;
+        top:0px;
+        
+    
+    }
+
+    .btn-abrir--fechar{
+        background-color: rgb(255, 228, 196);
+        padding: 15px;
+        
+        
+    }
+    
+    
+    nav.ativar .menu{
+      display: none;
+    }
+    
+    
+    
+    #btn-fechar{
+        margin-left: 20px;
+        margin-top: 20px;
+        position: absolute;
+        top:20px;
+        background-color: antiquewhite;
+    }
+    
+    li a{
+        color: black;
+        text-decoration: none;
+        
+        
+    }
+    
+    
+    
+    
+    li{
+        padding-bottom: 1em;
+        padding-top: 1em;
+        padding-left: 2em;
+        /* border: 2px red solid; */
+        font-weight: 600;
+        
+        
+        
+    }
+    
+    li::before{
+        content: "> ";
+        color: red;
+    }
+    li:hover::before{
+        content: "^.^ ";
+    }
+    
+    
+    li:hover{
+        background-color: azure;
+    }
+    
+}
