@@ -21,8 +21,9 @@ body{
     
 
 }
-button{
+button .btn{
     display: none;
+    position: absolute;
 }
 .primeira-pg{
     width: 100%;
@@ -33,6 +34,11 @@ img{
     height: 100vh;
     width: 40%;
     float: right;
+}
+
+.seta{
+    /* border: solid black 1px; */
+    border-radius: 60px ;
 }
 
 .primeira-pg__apresentacao{
@@ -70,7 +76,7 @@ h2{
     
 }
 
-.menu-lista__item{
+.menu-lista__item, .btn-link{
     width: 25%;
     display: inline;
     padding: 1em 2em;
@@ -81,7 +87,7 @@ h2{
     font-weight: 900;
 }
 
-.menu-lista__item:hover{
+.menu-lista__item:hover, .btn-link:hover{
     background-color: azure;
 }
 
@@ -140,3 +146,305 @@ section #contato{
     bottom: 25em;
 }
 
+
+
+/* Pagina sobre */
+.img-sobre{
+    width: 50%;
+    filter: grayscale(2);
+    opacity:0.5;
+    float:left;
+}
+
+.sobre{
+    width: 50%;
+    float: right;
+    position: relative;
+    padding-top:10%;
+
+}
+
+.sobre p{
+    margin:0 10%;
+    text-align: justify;
+}
+
+.btn-link{
+    position: relative;
+    top: 2em;
+    height: 2em;
+    font-size:1em ;
+    color: black;
+}
+
+
+
+
+/* pagina contato */
+
+.contato{
+    width: 100%;
+    height: 100vh;
+    /* border: solid; */
+    /* background: grey; */
+    /* overflow-y: scroll;  */
+}
+
+.contato-form__{
+    width: 100%;
+    height: 100%;
+
+}
+.contato-form{
+    
+    width: 50%;
+    margin: 0 auto;
+    /* border: red solid; */
+    height: 100%;
+    position: relative;
+    bottom:40em;
+    left:10%;
+    height: 70%;
+
+}
+
+.contato-titulo2{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    /* margin-top:7%; */
+     padding-top: 20%; 
+     padding-bottom: 22%; 
+
+}
+
+form{
+    padding-top:25%;
+    padding-bottom:25%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* border: red solid; */
+    /* left: 10%; */
+    float: right; 
+    
+
+
+}
+
+input[type='text'], input[type='email'], textarea{
+    width: 50%;
+    padding: 2%;
+    margin: 2%;
+    border-color:black;
+    border-radius: 5px;
+
+
+}
+
+input[type='submit']{
+    width: 25%;
+    color:rgb(34, 33, 34);
+    font-family:'AM';
+    padding: 0.5em 2em;
+    top:1em;
+}
+
+.contato-form .seta{
+    float:right;
+    position: relative;
+    bottom:35em;
+    left: 20%;
+
+}
+
+.contato-form .code{
+    width: 100%;
+    float:right;
+    position: relative;
+    bottom:30em;
+    left: 50%;
+
+
+}
+
+
+
+
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+    
+    
+    @font-face{
+        font-family: "AM";
+        src: url(../fontes/AM_TP001.TTF);
+        
+    }
+    
+    body{
+        width: 100%;
+        font-family:"AM";
+        background-color: rgb(255, 228, 196);
+        overflow-y: hidden;   
+        
+    }
+    
+    header{
+        width: 100%;
+        height: 100vh;
+        
+    
+    }
+
+   .primeira-pg__apresentacao{
+        width: 90%;
+        margin: auto;
+        position: relative;
+        bottom:200px;
+
+    }
+
+    .contato{
+        height: 100vh;
+
+    }
+
+    .contato-redes{
+        display: block;
+        margin:0 auto;
+        /* float: none; */
+
+    }
+
+    .contato-redes__link{
+        margin: 0 auto;
+        display: block;
+        padding: 0 40px;
+        width: 10px;
+
+    }
+
+    .contato-redes__icone{
+        width: 190px;
+    }
+    
+    
+    h1{
+       font-size: 32px;
+       position: relative;
+       bottom: 5em;
+       margin: 0 auto;
+    }
+    
+    
+    header img{
+        width: 100%;
+        filter: grayscale(2);
+        opacity:0.5;
+    }
+    
+    .menu{
+        position: absolute;
+        background-color: rgb(255, 228, 196);
+        width: 100%;
+        position: fixed;
+        top: 1em;
+        text-align: left;
+        display:block;
+        top:0px;
+        
+    
+    }
+
+    .menu-lista{
+        width: 100%;
+        
+    
+
+    }
+
+    .menu-lista__item{
+        border: none;
+        width: 100%;
+        float: left;
+
+        
+       
+    }
+
+    .btn-abrir--fechar{
+        background-color: rgb(255, 228, 196);
+        padding: 15px;
+        display: block;
+        
+        
+    }
+    
+    
+    nav.ativar .menu{
+      display: block;
+    }
+    
+
+    button .btn {
+        position: absolute;
+        display: block;
+        width: 20px;
+        right: 90%;
+    }
+
+
+    
+    
+    #btn-fechar{
+        margin-left: 20px;
+        margin-top: 20px;
+        position: absolute;
+        top:20px;
+        background-color: antiquewhite;
+    }
+    
+    li a{
+        color: black;
+        text-decoration: none;
+        
+        
+    }
+    
+    
+    
+    
+    li{
+        padding-bottom: 1em;
+        padding-top: 1em;
+        padding-left: 0.2em;
+        /* border: 2px red solid; */
+        font-weight: 600;
+        
+        
+        
+    }
+    
+    li::before{
+        content: "> ";
+        color: red;
+    }
+    li:hover::before{
+        content: "^.^ ";
+    }
+    
+    
+    li:hover{
+        background-color: azure;
+    }
+    
+} 

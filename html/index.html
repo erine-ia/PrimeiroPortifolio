@@ -12,7 +12,10 @@
     <div class="primeira-pg">
         <header class="primeira-pg__um">
             <div id="apresentacao">
-                
+                  <!-- Botão menu -->
+                <div class="btn-abrir--fechar">
+                    <!-- <input type="button" class="btn btn--abrir" onclick="abrir()" value="Menu"> -->
+                </div>
                 <div class="primeira-pg__img center">
                     <img src="../img/eri.jpg">
                 </div>
@@ -23,21 +26,26 @@
                     <!-- <xmp><p></p></xmp> -->
                     <h1 class="apresentacao-titulo"><span>{</span>Eu me chamo Erinéia<span>}</span></h1>
                     <br>
-                    <h2>Sou Dev.</h2>
+                    <h2>Dev. em Formação;</h2>
                     <br>
                     <h2>if(youNeedMe){<a href="#contato"><p class="code" id="ir-contato">Pode me chamar tbm!</p></a>} </h2>
+
+                    <!-- <div class="apresentacao-mobile">
+                        <h2>Sou dev. <br> Me ancontre: </h2>
+                    </div> -->
                     
                 </div>
             </div>
-            
+
+          
+
+            <!-- Menu -->
             <nav class="menu menu--fechado">
-                <div class="btn-abrir--fechar">
-                    <button class="btn btn--abrir">menu</button>
-                </div>
+                
                 <ul class="menu-lista">
-                    <li class="menu-lista__item"><a href="index.html" title="sobre">Faço()</a></li>
-                    <li class="menu-lista__item"><a href="projetos.html" title="trabalhos">Fiz()</a></li>
-                    <li class="menu-lista__item"><a href="contato.html" title="">Farei()</a></li>
+                    <li class="menu-lista__item"><a href="sobre.html" title="sobre">Sobre()</a></li>
+                    <li class="menu-lista__item"><a href="projetos.html" title="trabalhos">Pojetos()</a></li>
+                    <li class="menu-lista__item"><a href="contato.html" title="">Contato()</a></li>
                 </ul>
             </nav>
         </header>
@@ -59,8 +67,22 @@
                 
             </section>
         </main>
-  </div>  
+  </div> 
+  <script>
+    function abrir(){
+    
+    var menu = document.getElementByClass(".menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+  }
+
+  document.getElementsByTagName("button").
+addEventListener("click", abrir);
+  </script>
+  <script src="../js/script.js"></script> 
 </body>
-<script src="../js/script.js"></script>
-<script src="../js/jquery-3.6.0.min.js"></script>
+
 </html>
