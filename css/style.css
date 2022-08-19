@@ -18,6 +18,7 @@ body{
     font-family: "AM";
     background-color: rgba(255, 228, 196, 0.624);
     overflow: hidden;
+    height: 100%;
     
 
 }
@@ -102,7 +103,8 @@ main{
 }
 section #contato{
     width: 100%;
-    display: block;
+    /* display: block; */
+    height: 100%;
 }
 .contato-titulo{
     width: 30%;
@@ -110,13 +112,14 @@ section #contato{
     text-align: center;
     background-color: black;
     color: aliceblue;
-    margin-top:7%;
-    padding-top: 20%;
+    /* margin-top:7%; */
+    padding-top: 20%; 
 
 }
 
 .contato-titulo h1{
-    width: 100%;
+    width: 90%;
+    text-align: center;
     transform:rotate(270deg);
 
    
@@ -128,13 +131,14 @@ section #contato{
     /* border: red solid; */
     height: 100%;
     position: relative;
-    bottom:500px;
+    bottom:30em;
+
     
 }
 
 .contato-redes__icone{
-    width: 128px;
-    height: 128px;
+    width: 25%;
+    height: 25%;
     /* border: 1px red solid; */
     padding-left: 3em;
 }
@@ -167,6 +171,7 @@ section #contato{
 .sobre p{
     margin:0 10%;
     text-align: justify;
+    font-size: 1.2em;
 }
 
 .btn-link{
@@ -317,24 +322,65 @@ input[type='submit']{
         height: 100vh;
 
     }
+    .contato-titulo, .contato-titulo2{
+        width: 100%;
+        height:10%;
+        text-align: center;
+        vertical-align: middle;
+        
+    }
+    .contato-titulo h1{
+        padding-top:25%;
+        transform:rotate(0deg);
+    }
 
     .contato-redes{
-        display: block;
+        height: 80%;
+        justify-content:center;
+        display: grid; 
+        grid-template:
+          'img img ' 50% 
+          'img img ' 50%
+          
+        ;
+        
         margin:0 auto;
+        width: 90%;
+        text-align: center;
+        bottom:1em;
+        padding-top:10%; 
+        /* border:solid; */
+
+
         /* float: none; */
 
     }
 
     .contato-redes__link{
-        margin: 0 auto;
-        display: block;
-        padding: 0 40px;
-        width: 10px;
+        margin: 0 auto; 
+        display: block; 
+        /* padding: 0 40px; */
+        /* width: 100%;  */
 
     }
 
     .contato-redes__icone{
-        width: 190px;
+        width: 100%;
+        height: 80%;
+        margin:0 auto;
+        /* border: solid;  */
+        padding:0 ;
+   
+        
+        
+
+        
+        
+    }
+    .seta{
+        position:relative;
+        top:3em;
+        width: 50%;
     }
     
     
@@ -446,5 +492,69 @@ input[type='submit']{
     li:hover{
         background-color: azure;
     }
+
+
+    /* pagina com o formulario de contato */
+    .contato-titulo2{
+        height:10%;
+        padding: 2%;
+        text-align: center;
+    }
+    .contato-titulo2 h1{
+        padding-top:20%;
+        position: relative;
+        bottom:1.5em;
+        transform:rotate(0deg);
+    }
+
+    .contato-form__{
+        width: 100%;
+        height: 100%;
+
+    }
+    .contato2{
+        width:100%;
+    }
+ 
+    form{
+        width: 100%;
+        top:38em;
+        position: relative;
+        right:40%;
+        /* border:solid; */
+        display:grid;
+        grid-template: "input[type='text'] input[type='email']" 50% ;
+    }
+
+    input[type='text'], input[type='email'], textarea{
+        position: relative;
+        width: 90%;
+        padding: 3%; 
+        /* margin: 2%; */
+        border-color:black;
+        margin:0.2em;
+        border-radius: 5px;
+       
+    
+    
+    }
+
+    .contato-form .seta{
+        float:right;
+        position: relative;
+        top:10em;
+        left: 20%;
+    
+    }
+    
+    .contato-form .code{
+        width: 10%;
+        float:right;
+        position: relative;
+        top:20em;
+        left: 50%;
+
+    }
+
     
 } 
