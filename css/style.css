@@ -406,13 +406,16 @@ input[type='submit']{
         top: 1em;
         text-align: left;
         display:block;
-        top:0px;
+        top:1px;
+        
         
     
     }
 
     .menu-lista{
         width: 100%;
+        position: relative;
+        
         
     
 
@@ -429,7 +432,7 @@ input[type='submit']{
 
     .btn-abrir--fechar{
         background-color: rgb(255, 228, 196);
-        padding: 15px;
+        padding: 70px;
         display: block;
         
         
@@ -555,6 +558,72 @@ input[type='submit']{
         left: 50%;
 
     }
+
+    .pagina-sobre{
+        width: 100%;
+        position: relative;
+        top:1em;
+        height:100vh;
+      
+        
+    }  
+    
+    .sobre{
+        width: 60%;
+        position: relative;
+        top:0px;
+        border:solid;
+
+     
+
+    }
+
+    .sobre-titulo{
+        position: relative;
+        top:1em;
+        padding-bottom:2em;
+
+       
+    }
+
+
+     .img-sobre{
+        height:40%;
+        position: relative;
+        bottom:500px;
+        z-index: -999999;
+    
+     }
+
+
+     .sobre-pgfPrincipal{
+           position: relative;
+           top: 70px;
+           font-size:6%;
+
+    
+     }
+
+
+    .sobre .btn-link{
+        position: relative;
+        float:left;
+        right:45%;
+        text-align:center;
+        vertical-align:middle;
+        padding-top: 8%;
+        
+        
+        
+
+    }
+
+
+
+
+
+  
+
 
     
 } 
