@@ -275,11 +275,18 @@ input[type='submit']{
 
 }
 
+.contato-redes .seta .code{
+    padding:0;
+    color:red;
+
+}
+
 
 
 
 
 /* mobile */
+
 
 @media screen and (max-width: 768px) {
     *{
@@ -298,6 +305,7 @@ input[type='submit']{
     body{
         width: 100%;
         font-family:"AM";
+        font-size: 16px;
         background-color: rgb(255, 228, 196);
         overflow-y: hidden;   
         
@@ -339,11 +347,10 @@ input[type='submit']{
         justify-content:center;
         display: grid; 
         grid-template:
-          'img img ' 50% 
-          'img img ' 50%
-          
+          'img ... img ' 45%
+          'img ... img ' 50%
         ;
-        
+        grid-template-rows: auto; 
         margin:0 auto;
         width: 90%;
         text-align: center;
@@ -354,6 +361,11 @@ input[type='submit']{
 
         /* float: none; */
 
+    }
+
+    .contato-redes .seta{
+        padding:0;
+        color:red;
     }
 
     .contato-redes__link{
@@ -385,11 +397,25 @@ input[type='submit']{
     
     
     h1{
-       font-size: 32px;
+       font-size: 25px;
        position: relative;
        bottom: 5em;
        margin: 0 auto;
+       padding-bottom: 0;
+    
     }
+    
+    .pri-h2{
+        font-size: 20px;
+        padding-top:0;
+        margin-top: -190px;
+    }
+
+
+    .seg-h2{
+        display:none;
+    }
+
     
     
     header img{
@@ -407,10 +433,18 @@ input[type='submit']{
         text-align: left;
         display:block;
         top:1px;
+        transition: all 0.9s ease-in-out;
+        
         
         
     
     }
+
+    .menu--fechado{
+        transition: all 0.7s ease;
+
+    }
+
 
     .menu-lista{
         width: 100%;
@@ -439,17 +473,97 @@ input[type='submit']{
     }
     
     
-    nav.ativar .menu{
+    nav .menu{
       display: block;
+      transition:all 2s ease-in;
     }
+
+    
     
 
-    button .btn {
+    .btn{
+        background-color: red;
         position: absolute;
         display: block;
-        width: 20px;
-        right: 90%;
+        height:5px;
+        top: 20px;
+        width: 50px;
+        border-radius: 2px;
+        right: 80%;
+        z-index:9999;
+       
     }
+
+    .btn::before{
+        content: ' ';
+        position: relative;
+        height: 100%;
+        top: -10px;
+        width: 100%;
+        display:block;
+        border-radius: 2px;
+        background-color: red;
+
+
+    }
+
+    .btn::after{
+        content: ' ';
+        position: relative;
+        height: 100%;
+        top: 5px;
+        width: 100%;
+        display:block;
+        border-radius: 2px;
+        background-color: red;
+    }
+
+    .btn-cruz{
+        background-color: red;
+        position: absolute;
+        display: block;
+        height:5px;
+        top: 20px;
+        left: 45px;
+        width: 50px;
+        border-radius: 2px;
+        right: 10px;
+        z-index:9999;
+        transform:rotate(145deg);
+        
+    }
+
+    .btn-cruz::before{
+        content:'';
+        background-color: red;
+        position: absolute;
+        display: block;
+        height:5px;
+        left: -2px;
+        top: 1px;
+        width: 50px;
+        border-radius: 2px;
+        right: 15px;
+        transform: rotate(250deg);
+        z-index:9999;
+       
+        
+    }
+    .btn-cruz::after{
+        display: none;
+    }
+
+    .btn-abrir{
+        background-color:bisque;
+        height:50px;
+        display:block;
+        position: relative;
+
+    }
+
+
+
+
 
 
     
@@ -458,7 +572,7 @@ input[type='submit']{
         margin-left: 20px;
         margin-top: 20px;
         position: absolute;
-        top:20px;
+        top:20px; 
         background-color: antiquewhite;
     }
     
@@ -610,7 +724,7 @@ input[type='submit']{
         float:left;
         right:45%;
         text-align:center;
-        vertical-align:middle;
+        vertical-align:left;
         padding-top: 8%;
         
         
@@ -620,10 +734,12 @@ input[type='submit']{
 
 
 
-
-
   
 
 
     
 } 
+
+@media screen and (max-width: 900px){
+
+}
