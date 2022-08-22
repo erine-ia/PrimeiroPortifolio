@@ -62,13 +62,25 @@ h2{
 }
 
 .menu{
-    /* border: red solid 1px; */
+    /* border: red solid 1px;  */
     padding: 1em  0;
     position: relative;
     top:10%; 
     margin-top:3em;
     text-align: center;
     width: 60%;
+    transition: all 0.9s ease-in-out;
+}
+
+.menu--aberto{
+    display:block;
+    padding: 1em  0;
+    position: relative;
+    top:10%; 
+    margin-top:3em;
+    text-align: center;
+    width: 60%;
+
 }
 
 .menu-lista{
@@ -316,6 +328,9 @@ input[type='submit']{
         height: 100vh;
         
     
+    }
+    .menu--aberto{
+        display:none;
     }
 
    .primeira-pg__apresentacao{
